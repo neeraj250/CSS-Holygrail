@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holygrail</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 25px;
+            border-radius: 5px;
+        }
+        body{
+            background-color: skyblue;
+        }
+        .flex-container{
+            height: 91.5vh;
+            width: 96%;
+            margin: 2%;
+        }
+        .flex-container > .header,.footer{
+            margin-left: 1%;
+            width: 98%;
+            height: 10vh;
+            background-color: aqua;
+            text-align: center;
+            line-height: 10vh;
+
+        }
+        .flex-container > .container{
+            height: 80%;
+            width: 100%;
+            display: flex;
+        }
+        .container > .aside{
+            margin: 1%;
+            flex-grow: 1;
+            background-color: lightgreen;
+            line-height: 70vh;
+            text-align: center;
+        }
+        .container > .article{
+            margin: 1%;
+            flex-grow: 5;
+            background-color: orange;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .inner-container{
+            display: flex;
+        }
+        .inner-container > .image{
+            height: 33vh;
+            margin: 5px;
+            flex-grow: 1;
+            line-height: 33vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header">
+            Header
+        </div>
+        <div class="container">
+            <div class="aside">
+                Aside
+            </div>
+            <div class="article">
+                <div>
+                    Article
+                </div>
+                <div class="inner-container">
+                    <div class="image" style="background-color: gold;">
+                        Image
+                    </div>
+                    <div class="image" style="background-color: gold;">
+                        Image
+                    </div>
+                    <div class="image" style="background-color: gold;">
+                        Image
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
