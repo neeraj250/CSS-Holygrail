@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holygrail</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: grey;
+        }
+        .flex-container{
+            height: 97vh;
+            width: 100%;
+        }
+        .flex-container > .header,.footer{
+            margin: 1%;
+            height: 16vh;
+            width: 98%;
+            background-color: #b2beb5;
+            text-align: center;
+            line-height: 20vh;
+            border-radius: 5px;
+        }
+        .flex-container > section{
+            height: 60vh;
+        }
+        .container{
+            display: flex;
+        }
+        .container > nav ,.aside{
+            flex-grow: 1;
+        }
+        .container > .article{
+            flex-grow: 2;
+        }
+        .container > *{
+            line-height: 60vh;
+            text-align: center;
+            margin: 15px;
+            background-color: #b2beb5;
+            border-radius: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header">
+            Header
+        </div>
+        <section class="container">
+            <nav>
+                Navigation
+            </nav>
+            <div class="article">
+                Article
+            </div>
+            <div class="aside">
+                Aside
+            </div>
+        </section>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
